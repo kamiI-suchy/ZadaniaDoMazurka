@@ -55,7 +55,7 @@ int main(void) { // Definiujemy glowna funkcje serwera UDP.
         if (ip_text == NULL) { // Sprawdzamy, czy konwersja adresu IP nie zakonczyla sie bledem.
             ip_text = "(nieznany_adres)"; // Ustawiamy bezpieczny napis zastepczy, gdy konwersja sie nie powiedzie.
         } // Konczymy obsluge bledu konwersji adresu.
-        printf("Obsluzono klienta %s:%d, tekst: %s\n", ip_text, ntohs(client_addr.sin_port), buffer); // Logujemy adres klienta i przetworzony tekst.
+        printf("Obsłużono klienta %s:%d, tekst: %s\n", ip_text, ntohs(client_addr.sin_port), buffer); // Logujemy adres klienta i przetworzony tekst.
         fflush(stdout); // Oprozniamy bufor wyjscia, aby log byl natychmiast widoczny.
     } // Konczymy petle serwera (w praktyce dziala bez konca).
     close(fd); // Zamykamy gniazdo serwera (kod formalny, zwykle nieosiagalny).

@@ -49,7 +49,7 @@
 - `shmctl(shmid, IPC_RMID, ...)` — usuwa segment pamięci z systemu.
 - `semget(key, nsems, flags)` — tworzy/otwiera zestaw semaforów.
 - `semop(semid, ops, nops)` — wykonuje operacje P/V (zajęcie/zwolnienie) na semaforach.
-- `semctl(semid, semnum, cmd, arg)` — ustawia/uswa semafory (np. `SETVAL`, `IPC_RMID`).
+- `semctl(semid, semnum, cmd, arg)` — ustawia/usuwa semafory (np. `SETVAL`, `IPC_RMID`).
 
 ### Gniazda UNIX i sieciowe (zad. 15 i 16)
 - `socket(domain, type, protocol)` — tworzy gniazdo.
